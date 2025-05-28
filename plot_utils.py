@@ -49,9 +49,9 @@ def plot_entropy_graph(entropy_list, save_path, show=True):
     plt.plot(eps_values, entropies, 'b-', marker='o', markersize=3, linewidth=1.5, label='Entropy S(ε)')
     plt.xscale('log')
     plt.xticks([1e-3, 1e-2, 1e-1], [r'$10^{-3}$', r'$10^{-2}$', r'$10^{-1}$'])
-    plt.xlabel(r'$\epsilon$ (Perceptual resolution)', fontsize=12)
+    plt.xlabel(r'$\epsilon$ (Perceptual resolution, log scale)', fontsize=12)
     plt.ylabel(r'Cognitive Entropy $S_\epsilon$', fontsize=12)
-    plt.title('Cognitive Entropy vs. Perceptual Resolution', fontsize=14)
+    plt.title('Cognitive Entropy vs. Perceptual Resolution (log scale)', fontsize=14)
     plt.grid(True, which='both', linestyle='--', alpha=0.5)
     plt.legend()
     plt.tight_layout()
@@ -115,7 +115,7 @@ def plot_entropy_and_derivative(
 
     # Plot entropy
     ax1.plot(epsilon_values, entropy_values, 'b-', label='Entropy S(ε)', alpha=PLOT_ALPHA)
-    ax1.set_xlabel(r'$\epsilon$ (scale)', fontsize=12)
+    ax1.set_xlabel(r'$\epsilon$ (Perceptual resolution, log scale)', fontsize=12)
     ax1.set_ylabel(r'$S_\epsilon$', color='b', fontsize=12)
     ax1.tick_params(axis='y', labelcolor='b')
     ax1.set_xscale("log")
@@ -134,7 +134,7 @@ def plot_entropy_and_derivative(
     ax1.scatter(max_eps, max_S, color='green', marker='D', label='Extrema')
 
     fig.legend(loc='upper right')
-    plt.title("Entropy $S(ε)$ and Its Derivative", fontsize=14)
+    plt.title("Entropy $S(ε)$ and Its Derivative (log scale)", fontsize=14)
     plt.tight_layout()
 
     # Save plots in multiple formats

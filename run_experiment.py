@@ -158,7 +158,6 @@ def main():
     # === Plot entropy vs ε ===
     entropy_plot_base = os.path.join(entropy_dir, "entropy_vs_epsilon")
     plot_entropy_graph(entropy_list, save_path=f"{entropy_plot_base}.png", show=show_plots)
-    plt.savefig(f"{entropy_plot_base}.pdf", format='pdf', dpi=600, bbox_inches='tight')
     plt.close()
 
     # === Plot ε-kernel size vs ε ===
