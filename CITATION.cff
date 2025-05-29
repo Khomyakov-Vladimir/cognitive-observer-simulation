@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Cognitive Simulator and Subjective Physics: Entropy as a Cognitive Projection"
+authors:
+  - family-names: Khomyakov
+    given-names: Vladimir
+date-released: 2025-05-29
+version: "1.0.0"
+doi: 10.5281/zenodo.15544618
+url: https://doi.org/10.5281/zenodo.15544618
+license: CC-BY-4.0
+type: software
+repository-code: https://github.com/Khomyakov-Vladimir/cognitive-observer-simulation
+keywords:
+  - cognitive physics
+  - subjective observer
+  - entropy
+  - simulation
+  - Python
