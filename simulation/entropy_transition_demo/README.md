@@ -1,6 +1,6 @@
 # Cognitive Entropy vs. Landauer Bound (Demo)
 
-This folder contains a self-contained script and resulting plot used in the main paper (Figure N).  
+This folder contains a self-contained script and resulting plot used in the main paper (Figure 7).  
 It demonstrates the step-like behavior of cognitive entropy as a function of perceptual resolution ε, 
 compared with the Landauer limit (energy cost per bit).
 
